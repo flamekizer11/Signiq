@@ -46,7 +46,7 @@ python app.py
 ## Screenshots
 
 ![HomePage](screenshots/1.Homepage.png)
-![Power of Sign Language](screenshots/2.Homepage_2.png)
+![Power of Sign Language](https://raw.githubusercontent.com/flamekizer11/Signiq/refs/heads/main/screenshots/2.Hompage_2.png)
 ![Sign Language alphabets clipart](screenshots/3.Home_Alphabets.png)
 ![English to Sign convertor](screenshots/4.Home_English_to_Sign.png)
 ![Sign Detection with confidence percentage](screenshots/5.Live_Sign_detection.png)
