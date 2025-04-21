@@ -73,8 +73,8 @@
                                     <source src="{{url_for('static', filename='Hand_motion.mp4')}}" >
                                 </video>
                             </div>    
-                            <div class="down-button" id="about-asl">
-                                <i class="fa-solid fa-arrow-down"></i>&nbsp;&nbsp;About ASL
+                            <div class="down-button" id="about-sign_language">
+                                <i class="fa-solid fa-arrow-down"></i>&nbsp;&nbsp;About Sign Language
                             </div>
                    
                          </div>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="block block-2" id="AboutASL">
+                <div class="block block-2" id="About">
                     <div class="header-spacing"></div>
                     <div class="desc appear">
                         <h1>The Power or Sign Language </h1>
@@ -151,7 +151,11 @@
                 <div class="block block-3" id="English2ASL">
                     <div class="header-spacing"></div>
                    
-                    <h1 class="asl-converter-heading">English to Sign Language converter</h1>
+                    <div class="row w-100 mx-auto appear">
+                        <div class="col-12 text-center">
+                            <h1 class="Sign-converter-heading">English to Sign converter</h1>
+                        </div>
+                    </div>
 
                     
                     <div class="row w-100 mx-auto appear">
@@ -329,7 +333,7 @@
     });
 
     var blocks = document.getElementsByClassName("block");
-    document.getElementById("about-asl").addEventListener("click", function(e) {
+    document.getElementById("about-Sign_language").addEventListener("click", function(e) {
         var b = $(".block");
         blocks[1].scrollIntoView();
     });
