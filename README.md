@@ -1,4 +1,6 @@
 # Establish Two-Way Communication using MobileNet, TensorFlow v2, Python, Flask, OpenCV, and the Web Speech API
+
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -15,6 +17,7 @@
 
 First we create the virtual environment and clone the repository into it. 
 Then, we install all dependencies before running the application.
+Note:- Python 3.10.11
 ```sh
 python -m venv myenv
 cd /path/to/myenv
