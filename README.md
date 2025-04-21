@@ -46,10 +46,10 @@ python app.py
 ## Screenshots
 
 ![HomePage](screenshots/1.Homepage.png)
-![Info about ASL](screenshots/2.Homepage_2.png)
-![ASL alphabets clipart](screenshots/3.Home_Alphabets.png)
-![English to ASL convertor](screenshots/4.Home_English_to_Sign.png)
-![ASL Detection with confidence percentage](screenshots/5.Live_Sign_detection.png)
+![Power of Sign Language](screenshots/2.Homepage_2.png)
+![Sign Language alphabets clipart](screenshots/3.Home_Alphabets.png)
+![English to Sign convertor](screenshots/4.Home_English_to_Sign.png)
+![Sign Detection with confidence percentage](screenshots/5.Live_Sign_detection.png)
 ![Text to speech settings](screenshots/6.Text_to_speech_settings.png)
 ![About US](screenshots/9.About_us.png)
 ![Our Vision](screenshots/10.Vision.png)
@@ -61,15 +61,10 @@ python app.py
 - This website was developed using Python, Flask, HTML, CSS & JavaScript.
 
 Users who wish to communicate using sign language can utilize this detection system to convert recognized gestures into speech, enabling seamless interaction.
-
 Users unfamiliar with sign language may use the English to Sign converter to learn the corresponding hand signs.
-
 The voice used for Text-to-Speech (TTS) can be customized in the settings.
-
 Developers can view the raw camera feed via SocketIO, alongside live gesture prediction rendered on the OpenCV stream.
-
 Text-to-speech translation utilizes the SpeechSynthesisUtterance() interface from the Web Speech API.
-
 TensorFlow 2.0 and the Keras library were employed to develop the detection model. The final model used for testing and deployment is MobileNet.
 
 Additional machine learning strategies include
@@ -114,5 +109,5 @@ Categorical Cross-Entropy Loss
 ├── webcam_detect.py...................Loads the model and predicts the class from the 
 │                                      frame input given as softmax probability which is sent 
 │                                      back to the client's end
-└── webcam.py..........................Used for testing ASL Sign Detection and preiction locally
+└── webcam.py..........................Used for testing Sign Detection and preiction locally
 ```
