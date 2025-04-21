@@ -1,3 +1,4 @@
+
 var record = false;
 
 function RecordButton(){
@@ -197,9 +198,50 @@ socket.on('processed_frame', function(data) {
     CAR = car.value;
   });
 
-  //Get DETECTION_THRESHOLD value
-  threshold.addEventListener('change', function(){
+threshold.addEventListener('change', function(){
+    document.getElementById('threshold-value').innerHTML = threshold.value + "%";
+    DETECTION_THRESHOLD = threshold.value;
+});
+
+// Add keyboard event listener for recording toggle
+document.addEventListener('keydown', function(event) {
+    // Toggle recording when 'R' key is pressed
+    if (event.key === 'r' || event.key === 'R') {
+        RecordButton();
+    }
+    
+    const key = event.key.toLowerCase();
+    if (/^[a-z]$/.test(key)) {
+        
+        interpreted_text.value += key;
+        showKeyboardFeedback(key); 
+    } 
+    // Handle space key
+    else if (event.key === ' ') {
+        event.preventDefault(); 
+        interpreted_text.value += ' ';
+        showKeyboardFeedback('Space'); 
+    }
+    // Handle backspace/delete key
+    else if (event.key === 'Backspace' || event.key === 'Delete') {
+        interpreted_text.value = interpreted_text.value.slice(0, -1);
+        showKeyboardFeedback('Backspace'); // Show visual feedback
+    }
+});
+
+// Add visual feedback for keyboard input
+function showKeyboardFeedback(key) {
+    
+    const feedbackElement = document.createElement('div');
+    feedbackElement.className = 'keyboard-feedback';
+    feedbackElement.textContent = key;
+    document.body.appendChild(feedbackElement);
+    
+
+    setTimeout(() => {
+        document.body.removeChild(feedbackElement);
+    }, 500);
+}threshold.addEventListener('change', function(){
     document.getElementById('threshold-value').innerHTML = threshold.value + "%";
     DETECTION_THRESHOLD = threshold.value;
   });
-
